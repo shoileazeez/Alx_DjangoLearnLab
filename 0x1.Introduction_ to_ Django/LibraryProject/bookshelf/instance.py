@@ -1,5 +1,5 @@
 from models import Book
-create_instances = Book(title="1984", author="George Orwell", publication_year=1949)
+create_instances = Book.objects.create(title="1984", author="George Orwell", publication_year=1949)
 create_instances.save()
 
 # with open('instance.py') as f:
