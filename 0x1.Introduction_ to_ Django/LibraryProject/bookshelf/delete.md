@@ -2,6 +2,8 @@
 
 ## delete  the instance create.md
 
+from bookshelf.models import Book
+
 ```python
 # deleting the  instance with the title “1984”, author “George Orwell”, and publication year 1948
 retrieved_book.delete()(title="1984", author="George Orwell", publication_year=1949)
