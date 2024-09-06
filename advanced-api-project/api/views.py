@@ -47,8 +47,11 @@ class BookDeleteView(DeleteView):
 
 # Enable filtering, searching, and ordering
     filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
+    filter_backends = [filters.OrderingFilter]
+    filter_backends = [filters.SearchFilter]
+    
 
-    # Filter by title, author, and publication_year
+    # Filter by title, author, and. publication_year
 
     # Enable search functionality
     search_fields = ['title', 'author']
