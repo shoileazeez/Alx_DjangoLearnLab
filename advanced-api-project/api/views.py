@@ -4,7 +4,7 @@ from django.views.generic import DetailView
 from django.views.generic import CreateView
 from django.views.generic import UpdateView
 from django.views.generic import DeleteView
-from rest_framework.permissions import IsAuthenticated, AllowAny
+from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAuthenticated
 from django.urls import reverse_lazy
 from .models import Book
 
@@ -12,13 +12,13 @@ class BookListView(ListView):
     model = Book
     template_name = 'bookshelf/book_list.html'  # Define your template
     context_object_name = 'books'
-    permission_classes = [AllowAny]
+    permission_classes = [IsAuthenticatedOrReadOnly]
 
 class BookDetailView(DetailView):
     model = Book
     template_name = 'bookshelf/book_detail.html'  # Template for displaying a single book
     context_object_name = 'book'
-    permission_classes = [AllowAny]
+    permission_classes = [IsAuthenticatedOrReadOnly]
     
 class BookCreateView(CreateView):
     model = Book
