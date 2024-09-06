@@ -9,6 +9,8 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.filters import SearchFilter, OrderingFilter
 from django.urls import reverse_lazy
 from .models import Book
+from django_filters import rest_framework
+from rest_framework import generics
 
 class BookListView(ListView):
     model = Book
