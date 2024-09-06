@@ -5,6 +5,8 @@ from django.views.generic import CreateView
 from django.views.generic import UpdateView
 from django.views.generic import DeleteView
 from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAuthenticated
+from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework.filters import SearchFilter, OrderingFilter
 from django.urls import reverse_lazy
 from .models import Book
 
@@ -40,3 +42,22 @@ class BookDeleteView(DeleteView):
     success_url = reverse_lazy('book-list') 
     permission_classes = [IsAuthenticated]         
 # Create your views here.
+
+# Enable filtering, searching, and ordering
+    filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
+
+    # Filter by title, author, and publication_year
+
+    # Enable search functionality
+    search_fields = ['title', 'author']
+
+    # Enable ordering functionality
+    ordering_fields = ['title', 'publication_year']
+    ordering = ['title']  # Default ordering by title
+
+# api/views.py
+
+# api/views.py
+
+
+    
