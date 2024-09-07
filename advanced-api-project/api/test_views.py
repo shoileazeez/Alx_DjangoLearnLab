@@ -3,6 +3,7 @@ from rest_framework.test import APITestCase, APIClient
 from django.urls import reverse
 from django.contrib.auth.models import User
 from .models import Book
+from rest_framework import status
 
 # Create your tests here.
 
