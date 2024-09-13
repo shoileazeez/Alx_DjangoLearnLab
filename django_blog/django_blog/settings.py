@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'django_blog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'alx',
+        'NAME': 'Local instance MySQL80',
         'USER': 'root',
         'PASSWORD': 'Likemerun',
         'HOST': 'localhost',  # e.g., 'localhost'
@@ -139,3 +139,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #         'DIRS': [BASE_DIR / 'templates'],
 #     },
 # ]
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
