@@ -42,3 +42,16 @@ class PostForm(forms.ModelForm):
         if commit:
             post.save()
         return post
+    
+class CommentForm(forms.ModelForm):
+    class meta:
+        model = User
+        fields = ['content']    
+        
+        
+        
+        def clean_content(self):
+            content = self.cleaned_data.get('content')
+            if len(content) < 5:
+                raise forms.ValidationError('The comment is too short. Minimum 5 characters required.')
+            return content
