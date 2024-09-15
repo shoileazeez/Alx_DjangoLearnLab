@@ -28,7 +28,7 @@ class ProfileUpdateForm(forms.ModelForm):
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ['title', 'content']  # Exclude 'author' from the form
+        fields = ['title', 'content', 'tags']  # Exclude 'author' from the form
 
     def __init__(self, *args, **kwargs):
         # Pass the logged-in user to the form

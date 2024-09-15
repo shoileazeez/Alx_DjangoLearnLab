@@ -1,4 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, get_object_or_404
+from taggit.models import Tag
+from django.db.models import Q
 from django.urls import reverse_lazy
 from .forms import CustomUserCreationForm
 from django.contrib.auth.decorators import login_required
@@ -109,3 +112,22 @@ class CommentUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     def test_func(self):
         comment = self.get_object()
         return comment.author == self.request.user.username
+    
+    
+def search_posts(request):
+    query = request.GET.get('q')
+    results = []
+    if query:
+        results = Post.objects.filter(
+            Q(title__icontains=query) |
+            Q(content__icontains=query) |
+            Q(tags__name__icontains=query)  # Filter by tag name
+        ).distinct()
+    return render(request, 'blog/search_results.html', {'results': results, 'query': query})    
+
+
+
+def posts_by_tag(request, tag_slug):
+    tag = get_object_or_404(Tag, slug=tag_slug)
+    posts = Post.objects.filter(tags__in=[tag])
+    return render(request, 'blog/posts_by_tag.html', {'posts': posts, 'tag': tag})
