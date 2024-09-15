@@ -72,23 +72,21 @@ class Update_View(UpdateView, UserPassesTestMixin, LoginRequiredMixin):
 
 
 @method_decorator(login_required, name='dispatch')
-def add_comment(request, post_id):
-    post = get_object_or_404(Post, id=post_id)
+class CommentCreateView(CreateView):
+    model = Comment
+    form_class = CommentForm
+    template_name = 'blog/add_comment.html'
 
-    if request.method == 'POST':
-        form = CommentForm(request.POST)
-        if form.is_valid():
-            comment = form.save(commit=False)
-            comment.post = post
-            comment.author = request.user.username  # Save the current user's username as the author
-            comment.save()
-            return redirect('post_detail', pk=post_id)
-    else:
-        form = CommentForm()
+    def form_valid(self, form):
+        post = get_object_or_404(Post, id=self.kwargs['post_id'])
+        form.instance.post = post
+        form.instance.author = self.request.user
+        return super().form_valid(form)
 
-    return render(request, 'blog/post_detail.html', {'post': post, 'form': form, 'comments': post.comments.all()})
+    def get_success_url(self):
+        return reverse_lazy('post_detail', kwargs={'pk': self.kwargs['post_id']})
 
-from django.views.generic.edit import DeleteView
+
 
 class CommentDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     model = Comment
