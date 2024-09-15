@@ -2,6 +2,7 @@ from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from .models import Post, Comment
+from taggit.forms import TagWidget
 
 class CustomUserCreationForm(UserCreationForm):
     email = forms.EmailField(required=True)
@@ -29,6 +30,9 @@ class PostForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = ['title', 'content', 'tags']  # Exclude 'author' from the form
+        widgets = {
+            'tags': TagWidget(),  # Use TagWidget to display tags more effectively
+        }
 
     def __init__(self, *args, **kwargs):
         # Pass the logged-in user to the form
