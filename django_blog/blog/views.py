@@ -8,7 +8,7 @@ from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView
 from django.views.generic.edit import DeleteView, UpdateView
-from .models import Post, comment
+from .models import Post, Comment
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.utils.decorators import method_decorator
 
@@ -91,7 +91,7 @@ def add_comment(request, post_id):
 from django.views.generic.edit import DeleteView
 
 class CommentDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
-    model = comment
+    model = Comment
     template_name = 'blog/comment_confirm_delete.html'
 
     def get_success_url(self):
@@ -101,7 +101,7 @@ class CommentDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         comment = self.get_object()
         return comment.author == self.request.user.username  # Ensure only the author can delete the comment
 class CommentUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
-    model = comment
+    model = Comment
     form_class = CommentForm
     template_name = 'blog/comment_form.html'
 
