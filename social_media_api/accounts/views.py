@@ -123,3 +123,10 @@ class FollowViewSet(viewsets.ViewSet):
 
     
 # Create your views here.
+
+
+
+
+
+
+generics.GenericAPIView", "permissions.IsAuthenticated", "CustomUser.objects.all()
