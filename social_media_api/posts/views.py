@@ -8,7 +8,8 @@ from .serializers import PostSerializer, CommentSerializer
 from .permissions import IsOwnerOrReadOnly
 from rest_framework import viewsets, filters
 from django_filters.rest_framework import DjangoFilterBackend
-
+from rest_framework import generics
+from rest_framework.permissions import IsAuthenticated
 
 
 
@@ -35,4 +36,15 @@ class CommentViewSet(viewsets.ModelViewSet):
         # Set the author to the current logged-in user
         serializer.save(author=self.request.user)
 
+
+class FeedView(generics.ListAPIView):
+    """Feed showing posts from followed users."""
+    serializer_class = PostSerializer
+    permission_classes = [IsAuthenticated]
+
+    def get_queryset(self):
+        """Get posts from users the current user is following."""
+        user = self.request.user
+        following_users = user.following.all()  # Users that the current user is following
+        return Post.objects.filter(author__in=following_users).order_by('-created_at')
 # Create your views here.
