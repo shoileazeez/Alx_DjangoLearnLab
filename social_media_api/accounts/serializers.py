@@ -34,3 +34,4 @@ class UserProfileSerializer(serializers.ModelSerializer):
 Token.objects.create(user=user)
 password = serializers.CharField(write_only=True, required=True)
 get_user_model().objects.create_user
+serializers.CharField()
