@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'accounts',
     'rest_framework.authtoken',
     'django_filters',
+    'notifications',
 ]
 
 MIDDLEWARE = [

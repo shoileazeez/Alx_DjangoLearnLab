@@ -10,6 +10,7 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from django.contrib.auth import get_user_model
 from rest_framework.decorators import action
 from rest_framework.pagination import PageNumberPagination
+from notifications.models import Notification
 
 # User Registration View
 class UserRegistrationView(APIView):
@@ -84,8 +85,20 @@ class FollowViewSet(viewsets.ViewSet):
         if user_to_follow in request.user.following.all():
             return Response({'error': f'You are already following {user_to_follow.username}.'}, status=status.HTTP_400_BAD_REQUEST)
 
+        # Add the user to the following list
         request.user.following.add(user_to_follow)
+
+        # Create a notification
+        Notification.objects.create(
+            recipient=user_to_follow,
+            sender=request.user,
+            action="started following you"
+        )
+
         return Response({'message': f'You are now following {user_to_follow.username}.'}, status=status.HTTP_200_OK)
+
+    
+
 
     @action(detail=True, methods=['post'], url_path='unfollow')
     def unfollow_user(self, request, pk=None):
@@ -129,4 +142,3 @@ class FollowViewSet(viewsets.ViewSet):
 
 
 
-generics.GenericAPIView", "permissions.IsAuthenticated", "CustomUser.objects.all()
