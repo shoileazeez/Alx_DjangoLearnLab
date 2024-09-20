@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-f8+u=#&19w_5a9rgxamha5w!=@dinm@i%vxqmn-s(#svp*=^w='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['hardeynuga.pythonanywhere.com']
 
 
 # Application definition
@@ -95,8 +95,12 @@ REST_FRAMEWORK = {
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'porfolio',
+        'USER': 'django',
+        'PASSWORD': 'Likemerun@23',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 

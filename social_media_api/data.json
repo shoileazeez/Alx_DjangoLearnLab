@@ -1,0 +1,1520 @@
+[
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "accounts",
+        "model": "customuser"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "authtoken",
+        "model": "token"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "authtoken",
+        "model": "tokenproxy"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "posts",
+        "model": "post"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "posts",
+        "model": "comment"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "posts",
+        "model": "like"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "notifications",
+        "model": "notification"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "4ht9fo5bijcvdfe1aikzbmoo2t19w8mb",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAUBf-FtSHQyqW4dN9vINwHUjU0Ke3K-O_apAvdnpk5LxXTtpa4NVnixOqirDr9bpjoIXUHfE_1Nmua67pMqHdFH7TpcWZ5Xg_376CkVr41GM6CRAAOOZBAZ7z4c28spdAZA94Fl9n3zJgCk3Ueh8wCBh0NIOr9AftLOJw:1srEPT:7n0WrYGU1wDHI3QFn6Fly5v7zc9nit9hGwszgXKLZAo",
+        "expire_date": "2024-10-03T10:29:15.135Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "at1a24avlnffrgpds26df9mw70br0ng1",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAUBf-FtSHQyqW4dN9vINwHUjU0Ke3K-O_apAvdnpk5LxXTtpa4NVnixOqirDr9bpjoIXUHfE_1Nmua67pMqHdFH7TpcWZ5Xg_376CkVr41GM6CRAAOOZBAZ7z4c28spdAZA94Fl9n3zJgCk3Ueh8wCBh0NIOr9AftLOJw:1sqRiY:v9E5KdbRZs8ms-LVKcz6aMSCvgtmLUi1FXPtB_T-Hps",
+        "expire_date": "2024-10-01T06:29:42.596Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "gei0vqalfbzpjpuqoz7u2fmmvx1tabrp",
+    "fields": {
+        "session_data": ".eJxVjDkOwjAUBe_iGlne7U9JnzNY3xsOIFuKkwpxdxIpBbRvZt6beNzW6reRFz8nciWSXH63gPGZ2wHSA9u909jbusyBHgo96aBTT_l1O92_g4qj7rUADcrGIB1wLp0tTqFzBqEktIxlU1TMJmNSQXMOXIPbQWBJWGE1cPL5AsmrNzI:1sqa1j:MBlzyguG5cAtAlndrxL2ePrzbPtnkGxTCK0hl0w6SCI",
+        "expire_date": "2024-10-01T15:22:03.143Z"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add user",
+        "content_type": [
+            "accounts",
+            "customuser"
+        ],
+        "codename": "add_customuser"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change user",
+        "content_type": [
+            "accounts",
+            "customuser"
+        ],
+        "codename": "change_customuser"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete user",
+        "content_type": [
+            "accounts",
+            "customuser"
+        ],
+        "codename": "delete_customuser"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view user",
+        "content_type": [
+            "accounts",
+            "customuser"
+        ],
+        "codename": "view_customuser"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add Token",
+        "content_type": [
+            "authtoken",
+            "token"
+        ],
+        "codename": "add_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change Token",
+        "content_type": [
+            "authtoken",
+            "token"
+        ],
+        "codename": "change_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete Token",
+        "content_type": [
+            "authtoken",
+            "token"
+        ],
+        "codename": "delete_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view Token",
+        "content_type": [
+            "authtoken",
+            "token"
+        ],
+        "codename": "view_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add Token",
+        "content_type": [
+            "authtoken",
+            "tokenproxy"
+        ],
+        "codename": "add_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change Token",
+        "content_type": [
+            "authtoken",
+            "tokenproxy"
+        ],
+        "codename": "change_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete Token",
+        "content_type": [
+            "authtoken",
+            "tokenproxy"
+        ],
+        "codename": "delete_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view Token",
+        "content_type": [
+            "authtoken",
+            "tokenproxy"
+        ],
+        "codename": "view_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add post",
+        "content_type": [
+            "posts",
+            "post"
+        ],
+        "codename": "add_post"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change post",
+        "content_type": [
+            "posts",
+            "post"
+        ],
+        "codename": "change_post"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete post",
+        "content_type": [
+            "posts",
+            "post"
+        ],
+        "codename": "delete_post"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view post",
+        "content_type": [
+            "posts",
+            "post"
+        ],
+        "codename": "view_post"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add comment",
+        "content_type": [
+            "posts",
+            "comment"
+        ],
+        "codename": "add_comment"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change comment",
+        "content_type": [
+            "posts",
+            "comment"
+        ],
+        "codename": "change_comment"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete comment",
+        "content_type": [
+            "posts",
+            "comment"
+        ],
+        "codename": "delete_comment"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view comment",
+        "content_type": [
+            "posts",
+            "comment"
+        ],
+        "codename": "view_comment"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add like",
+        "content_type": [
+            "posts",
+            "like"
+        ],
+        "codename": "add_like"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change like",
+        "content_type": [
+            "posts",
+            "like"
+        ],
+        "codename": "change_like"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete like",
+        "content_type": [
+            "posts",
+            "like"
+        ],
+        "codename": "delete_like"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view like",
+        "content_type": [
+            "posts",
+            "like"
+        ],
+        "codename": "view_like"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add notification",
+        "content_type": [
+            "notifications",
+            "notification"
+        ],
+        "codename": "add_notification"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change notification",
+        "content_type": [
+            "notifications",
+            "notification"
+        ],
+        "codename": "change_notification"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete notification",
+        "content_type": [
+            "notifications",
+            "notification"
+        ],
+        "codename": "delete_notification"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view notification",
+        "content_type": [
+            "notifications",
+            "notification"
+        ],
+        "codename": "view_notification"
+    }
+},
+{
+    "model": "accounts.customuser",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$oNcVH71PptyeWBCVTDjp14$LIlVBsPbTPzi4M+7GzOmR7wOnJO4Qui/mmvU+CDYtR8=",
+        "last_login": "2024-09-19T10:29:15Z",
+        "is_superuser": true,
+        "username": "hardeynuga",
+        "first_name": "",
+        "last_name": "",
+        "email": "shoabdulazeez@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-09-17T05:44:18Z",
+        "bio": "i am the admin of this project",
+        "profile_picture": "",
+        "groups": [],
+        "user_permissions": [],
+        "followers": [
+            [
+                "newuser"
+            ],
+            [
+                "olamide"
+            ]
+        ],
+        "following": [
+            [
+                "newuser"
+            ],
+            [
+                "olamide"
+            ]
+        ]
+    }
+},
+{
+    "model": "accounts.customuser",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$PyvE0iwNgLRAGCuqDVJRBV$CdDDAWhTYe37aKJbKLCf6h9N6b812cqd1GBFgtBz9/w=",
+        "last_login": "2024-09-19T10:16:13.038Z",
+        "is_superuser": false,
+        "username": "newuser",
+        "first_name": "",
+        "last_name": "",
+        "email": "newuser@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-09-17T05:46:55Z",
+        "bio": "i am a software engineer and i am a back end developer and i learn from alx africa",
+        "profile_picture": "profile_pics/IMG-20240516-WA0034.jpg",
+        "groups": [],
+        "user_permissions": [],
+        "followers": [
+            [
+                "hardeynuga"
+            ],
+            [
+                "newuser"
+            ],
+            [
+                "olamide"
+            ]
+        ],
+        "following": []
+    }
+},
+{
+    "model": "accounts.customuser",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$bvL6jNibuxHOL2uIPns6Jf$TBisVgNAyb3piIqWrfL6serCRiwokjwlwvMtU+MDXKk=",
+        "last_login": "2024-09-17T15:22:03Z",
+        "is_superuser": false,
+        "username": "olamide",
+        "first_name": "",
+        "last_name": "",
+        "email": "newuser@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-09-17T06:33:27Z",
+        "bio": "",
+        "profile_picture": "",
+        "groups": [],
+        "user_permissions": [],
+        "followers": [
+            [
+                "hardeynuga"
+            ],
+            [
+                "newuser"
+            ]
+        ],
+        "following": [
+            [
+                "hardeynuga"
+            ]
+        ]
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "6e050073483efe892ff2f8c6ea9cc387f52f2729",
+    "fields": {
+        "user": [
+            "newuser"
+        ],
+        "created": "2024-09-17T05:46:56.646Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "a753c91d0741ee0774649b16f300969adaada0c6",
+    "fields": {
+        "user": [
+            "olamide"
+        ],
+        "created": "2024-09-17T06:33:28.372Z"
+    }
+},
+{
+    "model": "notifications.notification",
+    "pk": 1,
+    "fields": {
+        "recipient": [
+            "newuser"
+        ],
+        "actor": [
+            "hardeynuga"
+        ],
+        "verb": "liked your post",
+        "target_content_type": [
+            "posts",
+            "post"
+        ],
+        "target_object_id": 6,
+        "timestamp": "2024-09-19T11:07:14.368Z",
+        "is_read": false
+    }
+},
+{
+    "model": "notifications.notification",
+    "pk": 2,
+    "fields": {
+        "recipient": [
+            "olamide"
+        ],
+        "actor": [
+            "hardeynuga"
+        ],
+        "verb": "liked your post",
+        "target_content_type": [
+            "posts",
+            "post"
+        ],
+        "target_object_id": 5,
+        "timestamp": "2024-09-19T11:13:46.291Z",
+        "is_read": false
+    }
+},
+{
+    "model": "posts.like",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "hardeynuga"
+        ],
+        "post": 1,
+        "liked_at": "2024-09-19T10:53:51.262Z"
+    }
+},
+{
+    "model": "posts.like",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "hardeynuga"
+        ],
+        "post": 6,
+        "liked_at": "2024-09-19T11:07:14.352Z"
+    }
+},
+{
+    "model": "posts.like",
+    "pk": 3,
+    "fields": {
+        "user": [
+            "hardeynuga"
+        ],
+        "post": 5,
+        "liked_at": "2024-09-19T11:13:46.258Z"
+    }
+},
+{
+    "model": "posts.comment",
+    "pk": 2,
+    "fields": {
+        "post": 3,
+        "author": [
+            "hardeynuga"
+        ],
+        "content": "ok",
+        "created_at": "2024-09-17T07:29:52.211Z",
+        "updated_at": "2024-09-17T19:22:44.612Z"
+    }
+},
+{
+    "model": "posts.comment",
+    "pk": 3,
+    "fields": {
+        "post": 3,
+        "author": [
+            "hardeynuga"
+        ],
+        "content": "nice try bitch",
+        "created_at": "2024-09-17T08:00:27.556Z",
+        "updated_at": "2024-09-17T14:40:00.057Z"
+    }
+},
+{
+    "model": "posts.comment",
+    "pk": 7,
+    "fields": {
+        "post": 3,
+        "author": [
+            "hardeynuga"
+        ],
+        "content": "ok",
+        "created_at": "2024-09-17T14:41:27.190Z",
+        "updated_at": "2024-09-17T14:41:27.190Z"
+    }
+},
+{
+    "model": "posts.comment",
+    "pk": 8,
+    "fields": {
+        "post": 3,
+        "author": [
+            "hardeynuga"
+        ],
+        "content": "ok",
+        "created_at": "2024-09-17T14:41:35.321Z",
+        "updated_at": "2024-09-17T14:41:35.321Z"
+    }
+},
+{
+    "model": "posts.comment",
+    "pk": 9,
+    "fields": {
+        "post": 3,
+        "author": [
+            "hardeynuga"
+        ],
+        "content": "ok",
+        "created_at": "2024-09-17T14:41:40.100Z",
+        "updated_at": "2024-09-17T14:41:40.100Z"
+    }
+},
+{
+    "model": "posts.comment",
+    "pk": 10,
+    "fields": {
+        "post": 3,
+        "author": [
+            "hardeynuga"
+        ],
+        "content": "ok",
+        "created_at": "2024-09-17T14:41:45.513Z",
+        "updated_at": "2024-09-17T14:41:45.513Z"
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 1,
+    "fields": {
+        "author": [
+            "hardeynuga"
+        ],
+        "title": "my first post",
+        "content": "this is my first post today and i will like to edit it",
+        "created_at": "2024-09-17T07:04:25.937Z",
+        "updated_at": "2024-09-19T10:51:19.631Z"
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 2,
+    "fields": {
+        "author": [
+            "hardeynuga"
+        ],
+        "title": "posts",
+        "content": "this is my second post today and thanks for viewing",
+        "created_at": "2024-09-17T07:05:04.878Z",
+        "updated_at": "2024-09-17T07:05:04.878Z"
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 3,
+    "fields": {
+        "author": [
+            "newuser"
+        ],
+        "title": "ade",
+        "content": "dfvgtbnyubjiukniok,ol,n9o,lo,,",
+        "created_at": "2024-09-17T07:29:32.287Z",
+        "updated_at": "2024-09-17T14:39:39.956Z"
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 4,
+    "fields": {
+        "author": [
+            "hardeynuga"
+        ],
+        "title": "ok",
+        "content": "ok",
+        "created_at": "2024-09-17T14:42:23.888Z",
+        "updated_at": "2024-09-17T14:42:23.888Z"
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 5,
+    "fields": {
+        "author": [
+            "olamide"
+        ],
+        "title": "wow",
+        "content": "cool",
+        "created_at": "2024-09-17T15:15:24.310Z",
+        "updated_at": "2024-09-17T15:15:24.310Z"
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 6,
+    "fields": {
+        "author": [
+            "newuser"
+        ],
+        "title": "that good for today",
+        "content": "i will like to share my experience today with yall",
+        "created_at": "2024-09-17T15:15:56.572Z",
+        "updated_at": "2024-09-17T15:15:56.572Z"
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 7,
+    "fields": {
+        "author": [
+            "hardeynuga"
+        ],
+        "title": "ade",
+        "content": "wow",
+        "created_at": "2024-09-19T10:32:44.646Z",
+        "updated_at": "2024-09-19T10:32:44.646Z"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2024-09-17T05:49:04.584Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "accounts",
+            "customuser"
+        ],
+        "object_id": "2",
+        "object_repr": "newuser",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Profile picture\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2024-09-17T06:24:27.886Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "accounts",
+            "customuser"
+        ],
+        "object_id": "2",
+        "object_repr": "newuser",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Profile picture\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2024-09-17T06:25:37.901Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "accounts",
+            "customuser"
+        ],
+        "object_id": "2",
+        "object_repr": "newuser",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Profile picture\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2024-09-17T06:25:52.606Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "accounts",
+            "customuser"
+        ],
+        "object_id": "2",
+        "object_repr": "newuser",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Profile picture\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2024-09-17T06:26:39.278Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "accounts",
+            "customuser"
+        ],
+        "object_id": "2",
+        "object_repr": "newuser",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Profile picture\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2024-09-17T06:29:48.054Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "accounts",
+            "customuser"
+        ],
+        "object_id": "2",
+        "object_repr": "newuser",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Bio\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2024-09-17T07:04:25.940Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "posts",
+            "post"
+        ],
+        "object_id": "1",
+        "object_repr": "my first post",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2024-09-17T07:04:30.657Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "posts",
+            "post"
+        ],
+        "object_id": "1",
+        "object_repr": "my first post",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2024-09-17T07:05:04.879Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "posts",
+            "post"
+        ],
+        "object_id": "2",
+        "object_repr": "posts",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2024-09-17T07:05:18.156Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "posts",
+            "comment"
+        ],
+        "object_id": "1",
+        "object_repr": "Comment by newuser on my first post",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2024-09-17T07:05:23.193Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "posts",
+            "comment"
+        ],
+        "object_id": "1",
+        "object_repr": "Comment by newuser on my first post",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2024-09-17T07:06:04.299Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "posts",
+            "post"
+        ],
+        "object_id": "1",
+        "object_repr": "my first post",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2024-09-17T07:29:32.289Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "posts",
+            "post"
+        ],
+        "object_id": "3",
+        "object_repr": "ade",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2024-09-17T07:29:52.211Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "posts",
+            "comment"
+        ],
+        "object_id": "2",
+        "object_repr": "Comment by newuser on ade",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2024-09-17T08:08:06.250Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "posts",
+            "comment"
+        ],
+        "object_id": "6",
+        "object_repr": "Comment by hardeynuga on my first post",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2024-09-17T08:08:06.250Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "posts",
+            "comment"
+        ],
+        "object_id": "5",
+        "object_repr": "Comment by hardeynuga on my first post",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2024-09-17T08:08:06.250Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "posts",
+            "comment"
+        ],
+        "object_id": "4",
+        "object_repr": "Comment by hardeynuga on my first post",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2024-09-17T09:44:36.995Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "accounts",
+            "customuser"
+        ],
+        "object_id": "1",
+        "object_repr": "hardeynuga",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Followers\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2024-09-17T09:44:43.888Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "accounts",
+            "customuser"
+        ],
+        "object_id": "3",
+        "object_repr": "olamide",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Followers\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2024-09-17T09:45:10.778Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "accounts",
+            "customuser"
+        ],
+        "object_id": "2",
+        "object_repr": "newuser",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Followers\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2024-09-17T09:45:36.585Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "accounts",
+            "customuser"
+        ],
+        "object_id": "1",
+        "object_repr": "hardeynuga",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Bio\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2024-09-17T14:39:39.964Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "posts",
+            "post"
+        ],
+        "object_id": "3",
+        "object_repr": "ade",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Author\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2024-09-17T14:39:52.431Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "posts",
+            "comment"
+        ],
+        "object_id": "3",
+        "object_repr": "Comment by newuser on posts",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Post\", \"Author\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2024-09-17T14:40:00.057Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "posts",
+            "comment"
+        ],
+        "object_id": "3",
+        "object_repr": "Comment by hardeynuga on ade",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Post\", \"Author\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2024-09-17T15:15:24.317Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "posts",
+            "post"
+        ],
+        "object_id": "5",
+        "object_repr": "wow",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2024-09-17T15:15:56.572Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "posts",
+            "post"
+        ],
+        "object_id": "6",
+        "object_repr": "that good for today",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2024-09-17T15:24:42.727Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "accounts",
+            "customuser"
+        ],
+        "object_id": "1",
+        "object_repr": "hardeynuga",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Followers\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2024-09-17T19:06:08.581Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "accounts",
+            "customuser"
+        ],
+        "object_id": "3",
+        "object_repr": "olamide",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Followers\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2024-09-19T10:29:38.007Z",
+        "user": [
+            "hardeynuga"
+        ],
+        "content_type": [
+            "accounts",
+            "customuser"
+        ],
+        "object_id": "1",
+        "object_repr": "hardeynuga",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Followers\"]}}]"
+    }
+}
+]
